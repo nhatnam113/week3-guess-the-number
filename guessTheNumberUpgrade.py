@@ -1,4 +1,4 @@
-# replace the contents of this comment with your name
+Nam Nguyen
 import random
 
 # -------------------------------------------------------------------
