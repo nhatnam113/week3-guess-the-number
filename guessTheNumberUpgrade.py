@@ -52,7 +52,7 @@ def evaluateAnswer( userGuess, userSecretNumber ):
     elif Userguess < secretnumber:
        print('your guess very low with the original.')
        return False
-    else:
+    elif userguess == usersecretnumber:
        return True
     
     # TO DO: ####################################################
@@ -76,6 +76,13 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 #       True, we'll show the right answer on the screen
 #       False, we won't show the right answer on the screen
 def playGame( showAnswer ):
+    print('Happy to come to the number guessing game!')
+    Upperlimit = int(input())
+    print('How many times would you like to take to guess a number?')
+    Totalguesses = int(input())
+    Secretnumber = upperlimit
+    print('Guess a secret number between 1 and the ' + str(upperlimit))
+    print('You will have total of ' + str(upperlimit))
     
     # TO DO: ####################################################
     # Write code in this function that                          #
