@@ -48,10 +48,10 @@ def askUserToGuess( times, secretNumber ):
 #   the 'userSecretNumber' parameter is the randomly generated number
 def evaluateAnswer( userGuess, userSecretNumber ):
     if Userguess > secretnumber:
-       print('your guess is very high.')
+       print('your guess is too high.')
        return False
     elif Userguess < secretnumber:
-       print('your guess very low.')
+       print('your guess too low.')
        return False
     elif userguess == usersecretnumber:
        return True
@@ -77,13 +77,14 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 #       True, we'll show the right answer on the screen
 #       False, we won't show the right answer on the screen
 def playGame( showAnswer ):
+    
     print('Welcome come to the number guessing game!')
-    Upperlimit = int(input())
+    upperlimit = int(input())
     print('How many times would you like to guess a number?')
-    Totalguesses = int(input())
+    totalguesses = int(input())
     thenumber = upperlimit
-    print('Guess a number between 1 and the ' + str(upperlimit))
-    print('You will have total of ' + str(totalguesses))
+    print('Guess a number between 1 and the ' +str(upperlimit))
+    print('You have a total of ' + str(totalguesses))
     
     # TO DO: ####################################################
     # Write code in this function that                          #
