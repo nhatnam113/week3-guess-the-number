@@ -7,8 +7,9 @@ import random
 #   'topLimit' which is the top limit for the random number generator
 # the function returns the random number generated to its caller
 def generateNumber( topLimit ):
+    
     secretnumber = random.randint(1,toplimit)
-    return secretnumber
+    return secretNumber
     
     # TO DO: ####################################################
     # Write code in this function that calculates and           #
@@ -47,13 +48,13 @@ def askUserToGuess( times, secretNumber ):
 #   the 'userSecretNumber' parameter is the randomly generated number
 def evaluateAnswer( userGuess, userSecretNumber ):
    
-    if Userguess < usersecretnumber:
+    if Userguess < userSecretNumber:
        print('Your guess is too low.')
        return False
-    elif Userguess > usersecretnumber:
+    elif Userguess > userSecretNumber:
        print('Your guess is too low.')
        return False
-    else:
+    else userGuess == userSecretNumber
        return True
     
     # TO DO: ####################################################
@@ -77,19 +78,16 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 #       True, we'll show the right answer on the screen
 #       False, we won't show the right answer on the screen
 def playGame( showAnswer ):
-    print('what is your name?')
-    myName = input()
-    print('Hi,' + myName + ' Now let play my guessing game!')
-
+    
     print('Please pick a highest number.')
     myToplimit = int(input())
 
     print('How many times would you like to guess?')
     totalGuesses = int(input())
-    theNumber = generateNumber(myTopLimit)
+    theNumber=upperLimit
 
-    print('Guess a number between 1 and the ' + str(myToplimit))
-    print('You have a total of ' + str(totalGuesses)+ 'guesses')
+    print('Guess a number between 1 and the ' +str(upperLimit))
+    print('You have a total of ' + str(totalGuesses))
     
     # TO DO: ####################################################
     # Write code in this function that                          #
