@@ -81,11 +81,11 @@ def playGame( showAnswer ):
     
     print('Welcome to the number guessing game!')
     prnit('Choose the upper limit of the random number generator')
-    upperLimit=int(input())
+    topLimit=int(input())
     print('How many times would you like to guess a number?')
     totalGuesses = int(input())
-    theNumber=generateNumber(upperLimit)
-    print('guess a number between 1 and the '+str(upperLimit)+' guess='+str(totalGuesses))    
+    theNumber=generateNumber(topLimit)
+    print('You have ' + str(totalGuesses) + ' time to guess a number between 1 and ' + str(upperLimit))    
 
 # TO DO: ####################################################
     # Write code in this function that                          #
