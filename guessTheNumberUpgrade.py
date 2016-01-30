@@ -78,7 +78,7 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 #       False, we won't show the right answer on the screen
 def playGame( showAnswer ):
     
-    print('Welcome to guessing game!')
+    print('Welcome to the number guessing game!')
     upperLimit = int(input())
     print('How many times would you like to guess a number?')
     totalGuesses = int(input())
