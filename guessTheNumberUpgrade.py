@@ -79,7 +79,7 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 def playGame( showAnswer ):
     
     print('Welcome to the number guessing game!')
-    prnit('Choose the upper limit of the random number')
+    print('Choose the upper limit of the random number')
     topLimit = int(input())
     print('How many times would you like to guess a number?')
     totalGuesses = int(input())
