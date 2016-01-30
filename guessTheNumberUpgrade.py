@@ -79,14 +79,14 @@ def evaluateAnswer( userGuess, userSecretNumber ):
 def playGame( showAnswer ):
     
     print('Welcome to the number guessing game!')
-    upperLimit = int(input())
+    prnit('Choose the upper limit of the random number generator')
+    upperLimit=int(input())
     print('How many times would you like to guess a number?')
-    totalGuesses = int(input())
-    theNumber = generateNumber(upperLimit)
-    print('guess a number between 1 and the '+str(upperLimit))
-    print('You have a total of ' + str(totalGuesses))
-    
-    # TO DO: ####################################################
+    totalGuesses=int(input())
+    theNumber=generateNumber(upperLimit)
+    print('guess a number between 1 and the '+str(upperLimit)+' guess='+str(totalGuesses))    
+
+# TO DO: ####################################################
     # Write code in this function that                          #
     # 1. Greets the user                                        #
     # 2. Asks the user to choose the upper limit of the random  #
